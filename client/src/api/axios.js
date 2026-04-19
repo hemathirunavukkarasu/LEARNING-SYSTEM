@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Base URL for all API calls
 const api = axios.create({
-  baseURL: 'http://localhost:5001/api',
+  baseURL: 'https://learning-system-8ggw.onrender.com/api',
 });
 
 // Automatically attach JWT token to every request
