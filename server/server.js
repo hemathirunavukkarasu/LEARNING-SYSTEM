@@ -9,6 +9,13 @@ app.use(cors({
 
 app.use(express.json());
 
+// Routes
+app.use('/api/auth', require('./routes/auth'));
+app.use('/api/dashboard', require('./routes/dashboard'));
+app.use('/api/questions', require('./routes/questions'));
+app.use('/api/report', require('./routes/report'));
+app.use('/api/results', require('./routes/results'));
+
 app.get('/', (req, res) => {
   res.send('Learning System Server is running! 🚀');
 });
